@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawasaki Motorcycles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body background="pictures/bg image.jpg"
+<body>
+    <header>
+        <div class="logo">
+            <img src="pictures/logo.jpg" alt="Kawasaki Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" id="homeButton">Home</a></li>
+                <li><a href="#" id="modelsButton">Models</a></li>
+                <li><a href="#" id="aboutButton">About</a></li>
+                <li><a href="#" id="contactButton">Contact</a></li>
+                
+            </ul>
+        </nav>
+        
+        
+    </header>
+    
+    
+    
+    <section class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Kawasaki Motorcycles is a leading manufacturer of high-performance motorcycles, renowned for their cutting-edge technology, innovation, and iconic designs. With a history spanning over a century, Kawasaki has continually pushed the boundaries of motorcycle engineering, delivering unrivaled performance and exhilarating riding experiences to enthusiasts worldwide.</p>
+            <p>Our commitment to excellence is reflected in every motorcycle we produce, from our legendary Ninja sportbikes to our rugged off-road machines and versatile street bikes. Each Kawasaki motorcycle is crafted with precision and passion, embodying the spirit of adventure and the thrill of the ride.</p>
+        </div>
+    <div>
+        <button type="button"><span></span></button>
+        
+    </div>
+    </section>
+    
+    
+
+    <section class="featured-models">
+        <h2>kawasaki models</h2>
+        <div class="row">
+            <div class="column">
+              <img src="pictures/zx-6r.avif" alt="Image 1" class="thumbnail" onclick="openModal('pictures/zx-6r.avif')">
+             <h3>Ninja ZX-6R</h3>
+             <p>Engine: 636cc, liquid-cooled inline-four<br>
+                Power: Approx. 130 HP<br>
+                Transmission: 6-speed<br>
+                Frame: Aluminum perimeter<br>
+                Weight: Approx. 196 kg<br>
+                Suspension: Adjustable Showa forks<br>
+                Brakes: Dual petal discs with radial-mount calipers</p>
+        </div>
+        
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img src="" id="modalImage" class="modal-content">
+        </div>
+    
+        
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Ninja ZX-10R.jfif" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Ninja ZX-10R.jfif')">
+            <h3>Ninja ZX-10R</h3>
+            <p>Engine: 998cc, liquid-cooled inline-four<br>
+                Power: Approx. 200 HP<br>
+                Transmission: 6-speed<br>
+                Frame: Aluminum twin-spar<br>
+                Weight: Approx. 206 kg<br>
+                Suspension: Showa Balance Free Fork<br>
+                Brakes: Brembo discs with monobloc calipers</p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    
+       
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Ninja ZX-14R.jpg" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Ninja ZX-14R.jpg')">
+            <h3>Ninja ZX-14R</h3>
+            <p> Engine: 1,441cc, liquid-cooled inline-four<br>
+                Power: Approx. 200 HP<br>
+                Transmission: 6-speed<br>
+                Frame: Aluminum monocoque<br>
+                Weight: Approx. 269 kg<br>
+                Suspension: Adjustable fork and Uni-Trak shock<br>
+                Brakes: Dual petal discs with radial-mount calipers</p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    </section>
+    <section class="featured-models">
+        
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Ninja ZX-10RR.jfif" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Ninja ZX-10RR.jfif')">
+            <h3>Ninja ZX-10RR</h3>
+            <p>Engine: 998cc, liquid-cooled inline-four<br>
+                Power: Approx. 201 HP<br>
+                Transmission: 6-speed<br>
+                Frame: Aluminum twin-spar<br>
+                Weight: Approx. 206 kg<br>
+                Suspension: Showa Balance Free Fork<br>
+                Brakes: Brembo discs with monobloc calipers</p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    
+        
+        <div class="row">
+            <div class="column">
+                <img src="pictures/ZX6RR-Ninja-3.webp" alt="Image 1" class="thumbnail" onclick="openModal('pictures/ZX6RR-Ninja-3.webp')">
+            <h3>Ninja ZX-6RR</h3>
+            <p>Engine: 599cc, liquid-cooled inline-four<br>
+                Power: Approx. 125 HP<br>
+                Transmission: 6-speed<br>
+                Frame: Aluminum perimeter<br>
+                Weight: Approx. 196 kg<br>
+                Suspension: Adjustable fork and Uni-Trak shock<br>
+                Brakes: Dual petal discs with radial-mount calipers</p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    
+       
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Ninja ZX-12R.jpg" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Ninja ZX-12R.jpg')">
+         
+            <h3>Ninja ZX-12R</h3>
+            <p>Engine: 1,199cc, liquid-cooled inline-four<br>
+                Power: Approximately 178 HP<br>
+                Transmission: 6-speed<br>
+                Frame: Aluminum perimeter<br>
+                Weight: Approximately 235 kg<br>
+                Suspension: Adjustable front forks and Uni-Trak rear shock<br>
+                Brakes: Dual petal discs with four-piston calipers</p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    </section>
+<!--for yahama models-->
+     <section class="yamaha-class">
+        <h2>Yamaha Models</h2>
+        <div class="row">
+            <div class="column">
+           
+             <img src="pictures/download.jfif" alt="Image 1" class="thumbnail" onclick="openModal('pictures/download.jfif')">
+            <h3>Yamaha YZF-R1</h3>
+            <p>
+                Engine:998cc liquid-cooled, inline 4-cylinder<br>
+                Power:Around 200 horsepower<br>
+                Torque:round 112 Nm<br>
+                Features:Advanced-electronics ,  suspension,aerodynamic designed
+            </p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    
+        
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Yamaha YZF-R6.jfif" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Yamaha YZF-R6.jfif')">
+            <h3>Yamaha YZF-R6</h3>
+            <p>
+                Engine: 599cc liquid-cooled, inline 4-cylinder<br>
+                Power: Around 120 horsepower<br>
+               Torque: Around 68 Nm<br>
+                Features: High-revving engine,race-inspired design, advanced electronics
+            </p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    
+       
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Yamaha MT-09.jfif" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Yamaha MT-09.jfif')">
+         
+            <h3>Yamaha MT-09</h3>
+            <p>Engine: 847cc liquid-cooled, inline 3-cylinder<br>
+                Power: Around 115 horsepower<br>
+                Torque: Around 87.5 Nm<br>
+                Features: Naked bike styling, adjustable suspension, quick-shifter
+            </p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    </section>
+    <section class="yamaha-class">
+        
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Yamaha MT-07.jfif" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Yamaha MT-07.jfif')">
+            <h3>Yamaha MT-07</h3>
+            <p>Engine: 689cc liquid-cooled, parallel twin<br>
+                Power: Around 74 horsepower<br>
+                Torque: Around 68 Nm<br>
+                Features: Lightweight chassis, agile handling, compact design</p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    
+        
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Yamaha Tenere 700.jfif" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Yamaha Tenere 700.jfif')">
+            <h3>Yamaha Tenere 700</h3>
+            <p>Engine: 689cc liquid-cooled, parallel twin<br>
+                Power: Around 72 horsepower<br>
+                Torque: Around 68 Nm<br>
+                Features: Adventure touring capabilities, long-travel suspension, rugged design</p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    
+       
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Yamaha Tracer 900.jfif" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Yamaha Tracer 900.jfif')">
+         
+            <h3>Yamaha Tracer 900</h3>
+            <p>Engine: 847cc liquid-cooled, inline 3-cylinder<br>
+                Power: Around 115 horsepower<br>
+                Torque: Around 87.5 Nm<br>
+                Features: Sport-touring versatility, adjustable windscreen, comfortable ergonomics</p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    </section>
+     <!-- for honda models -->
+     <section class="honda-class">
+        <h2>Honda Models</h2>
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Honda CBR1000RR-R Fireblade.jfif" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Honda CBR1000RR-R Fireblade.jfif')">
+            <h3>Honda CBR1000RR-R Fireblade</h3>
+            <p>Engine: Inline-four, 999cc, liquid-cooled<br>
+                Power: Around 214 horsepower<br>
+                Torque: Around 83 lb-ft<br>
+                Frame: Aluminum twin-spar<br>
+                Suspension: Showa Balance Free Front Fork and Pro-Link Rear Suspension<br>
+                Brakes: Dual disc front brakes, single disc rear brake with optional ABS<br>
+                Weight: Around 201 kg (443 lbs) dry<br>
+                Fuel Capacity: Approximately 16.1 liters</p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    
+        
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Honda CB1000R.jfif" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Honda CB1000R.jfif')">
+            <h3>Honda CB1000R</h3>
+            <p>Engine: Inline-four, 998cc, liquid-cooled<br>
+                Power: Around 143 horsepower<br>
+                Torque: Around 77 lb-ft<br>
+                Frame: Mono-backbone steel frame<br>
+                Suspension: Showa SFF-BP Front Fork and Horizontal Back-link Rear Suspension<br>
+                Brakes: Dual disc front brakes, single disc rear brake with optional ABS<br>
+                Weight: Around 212 kg (467 lbs) wet<br>
+                Fuel Capacity: Approximately 16.2 liters</p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    
+       
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Honda CRF450R.jpeg" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Honda CRF450R.jpeg')">
+         
+            <h3>Honda CRF450R</h3>
+            <p>Engine: Single-cylinder, 449cc, liquid-cooled<br>
+                Power: Around 60 horsepower<br>
+                Torque: Around 33 lb-ft<br>
+                Frame: Aluminum twin-spar<br>
+                Suspension: Showa 49mm coil-spring fork and Pro-Link rear suspension<br>
+                Brakes: Hydraulic disc brakes front and rear<br>
+                Weight: Around 106 kg (234 lbs) dry<br>
+                Fuel Capacity: Approximately 6.3 liters</p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    </section>
+    <section class="honda-class">
+        
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Honda CRF450RL.jfif" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Honda CRF450RL.jfif')">
+            <h3>Honda CRF450RL</h3>
+            <p>Engine: Single-cylinder, 449cc, liquid-cooled<br>
+                Power: Around 40 horsepower<br>
+                Torque: Around 28 lb-ft<br>
+                Frame: Semi-double cradle steel frame<br>
+                Suspension: Showa 49mm coil-spring fork and Pro-Link rear suspension<br>
+                Brakes: Hydraulic disc brakes front and rear with optional ABS<br>
+                Weight: Around 134 kg (295 lbs) wet<br>
+                Fuel Capacity: Approximately 7.6 liters.</p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    
+        
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Honda CRF300L-CRF300 Rally.jfif" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Honda CRF300L-CRF300 Rally.jfif')">
+            <h3>Honda CRF300L / CRF300 Rally</h3>
+            <p>Engine: Single-cylinder, 286cc, liquid-cooled<br>
+                Power: Around 27 horsepower<br>
+                Torque: Around 20 lb-ft<br>
+                Frame: Semi-double cradle steel frame<br>
+                Suspension: 43mm Showa telescopic fork and Pro-Link rear suspension<br>
+                Brakes: Hydraulic disc brakes front and rear with optional ABS<br>
+                Weight: CRF300L around 139 kg (306 lbs) wet, CRF300 Rally around 153 kg (337 lbs) wet<br>
+                Fuel Capacity: Approximately 7.8 liters</p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    
+       
+        <div class="row">
+            <div class="column">
+                <img src="pictures/Honda Rebel 1100.jfif" alt="Image 1" class="thumbnail" onclick="openModal('pictures/Honda Rebel 1100.jfif')">
+         
+            <h3>Honda Rebel 1100</h3>
+            <p>Engine: Parallel-twin, 1,084cc, liquid-cooled<br>
+                Power: Around 86 horsepower<br>
+                Torque: Around 98 lb-ft<br>
+                Frame: Steel diamond<br>
+                Suspension: 43mm Showa telescopic fork and twin Showa shocks with piggyback reservoirs<br>
+                Brakes: Hydraulic disc brakes front and rear with optional ABS<br>
+                Weight: Around 223 kg (492 lbs) wet<br>
+                Fuel Capacity: Approximately 13.6 liters</p>
+        </div>
+        <!-- Repeat similar structure for other featured models -->
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="contact">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
+            <p>Email: info@kawasaki.com</p>
+            <p>Phone: 1-800-KAWASAKI</p>
+            <p>Address: 123 Kawasaki Street, Cityville, Country</p>
+        </div>
+        <div class="contact-form">
+            <h2>Send us a Message</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    
+
+
+    <footer>
+        <p>&copy; 2024 Kawasaki Motorcycles. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
