@@ -1,10 +1,12 @@
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
 }
+
 
 
 
@@ -17,6 +19,7 @@ img {
     max-width: 50%;
     height: auto;
     border-radius: 3%;
+    
 }
 
 header {
@@ -76,6 +79,30 @@ nav ul li:hover::after {
     color: white;
   }
 
+.Container{
+   
+   
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24%;
+    background-color: rgb(255, 255, 255);
+    background-image: url("pictures/ZX6RR-Ninja-3.webp");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.Home h2{
+    margin-bottom: 50px;
+    padding: 5%;
+}
+
+
+
 .about {
     padding: 50px;
     margin: 25px;
@@ -127,11 +154,12 @@ nav ul li:hover::after {
 .contact{
     background-color: #04AA6D;
     padding: 50px;
-    width: 25%;
     border-radius: 15px;
-    align-items: center;
-   
+    margin-left: 500px;
+    margin-right: 500px; 
 }
+
+
 
 .featured-models h2,
 .contact h2 {
@@ -251,3 +279,4 @@ nav ul li:hover::after {
     cursor: pointer;
   }
   
+
