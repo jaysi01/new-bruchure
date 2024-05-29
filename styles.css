@@ -1,193 +1,174 @@
-
-
+/* styles.css */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-
-
 
 body {
-    font-family: Arial, sans-serif;
-   
-   
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to top, #336699 24%, #996633 89%);
+ 
 }
+
 img {
-    max-width: 50%;
-    height: auto;
-    border-radius: 3%;
-    
+  max-width: 50%;
+  height: auto;
+  border-radius: 3%;
 }
 
 header {
-    background-image: linear-gradient(to bottom right, rgb(0, 146, 61), rgb(16, 196, 0));
-    color: linear-gradient(to bottom right, rgb(0, 146, 61), rgb(16, 196, 0));
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-image: linear-gradient(to bottom, #996633 0%, #663300 51%);
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; 
+  width: 100%; 
+  top: 0;
+  z-index: 1000; 
 }
-section{
-    text-align: center;
+
+section {
+  text-align: center;
 }
 
 .logo img {
-    width: 100px;
-   
-    border-radius: 5px;
+  width: 100px;
+  border-radius: 5px;
 }
 
 nav ul {
-    list-style-type: none;
-    text-align: center;
+  list-style-type: none;
+  text-align: center;
+  margin-right: 20px; /* Adjust margin to create space between links */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
-    position: relative;
-  
+  display: inline;
+  margin-right: 20px;
+  position: relative;
 }
+
 nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: 2px 2px 5px rgb(39, 34, 34);
-    text-transform: uppercase;
-    
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  transition: color 0.3s; 
 }
-nav ul li::after {
-   content: '';
-   height: 3px;
-   width: 0%;
-   background: #15ff00;
-   position: absolute;
-   left: 0;
-   bottom: -10px;
-   transition: 0.5;
-  
-} 
-nav ul li:hover::after {
-   width: 100%;
+
+nav ul li a:hover {
+  color: #15ff00; 
 }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 
 .button:hover {
-    background-color: #04AA6D; /* Green */
-    color: white;
-  }
-
-.Container{
-   
-   
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24%;
-    background-color: rgb(255, 255, 255);
-    background-image: url("pictures/ZX6RR-Ninja-3.webp");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: #04AA6D; 
+  color: white;
 }
 
-
-.Home h2{
-    margin-bottom: 50px;
-    padding: 5%;
+.Container {
+  padding: 15%;
+  margin: 0 auto; 
+  background-image: url("pictures/BG PICTURE.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
+.title {
+  margin-top: 23%;
+  position: center;
+}
 
+.title h2 {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top: 0px;
+  text-align: justify;
+  font-size: xx-large;
+  color: #f4faff;
+  
+}
+.title p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-size: large;
+  color: #ffffff;
+}
 
 .about {
-    padding: 50px;
-    margin: 25px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: #04AA6D;
-    border-radius: 25px;
-   
-   
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #996633 25%, #336699 100%);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 .about-content {
-    flex: 1;
-    padding: 0 20px;
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
-   font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
   
 }
 
 .about h2 {
-    margin-bottom: 20px;
-   
-
+  margin-bottom: 20px;
+ 
 }
+
 .about p {
-    margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
-.about-image {
-    flex: 1;
-}
 
-.about-image img {
-    width: 10%;
-    height: auto;
-    border-radius: 5px;
-}
 
 .featured-models {
-    padding: 25px ;
-    text-align: center;
-    background-color: #a31414;
-    margin: 50px;
-    border-radius: 25px;
-    text-shadow: 2px 2px 5px rgb(39, 34, 34);
-}
-.contact{
-    background-color: #04AA6D;
-    padding: 50px;
-    border-radius: 15px;
-    margin-left: 500px;
-    margin-right: 500px; 
+  padding: 25px;
+  text-align: center;
+  background: linear-gradient(to top left, #003366 0%, #669999 100%);
+  margin: 50px;
+  border-radius: 25px;
+  text-shadow: 2px 2px 5px rgb(39, 34, 34);
 }
 
+.contact {
+  background: linear-gradient(to top left, #003366 0%, #669999 100%);
+  padding: 25px;
+  border-radius: 15px;
+  margin: 15px auto; 
+  max-width: 90%; 
+}
 
-
+.homeButton 
 .featured-models h2,
 .contact h2 {
-    margin-bottom: 10px;
-   
+  margin-bottom: 10px;
 }
 
 .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-/* Responsive styles */
-@media only screen and (max-width: 768px) {
-    .content {
-        padding: 10px;
-    }
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
-@media only screen and (max-width: 480px) {
-    .content {
-        padding: 5px;
-    }
-}
-* {
-    box-sizing: border-box;
-  }
 .column {
   float: left;
   width: 33.33%;
@@ -200,83 +181,209 @@ nav ul li:hover::after {
   clear: both;
   display: table;
 }
-.yamaha-class {
-    padding: 25px ;
-    text-align: center;
-    background-color: #1cdfec;
-    margin: 50px;
-    border-radius: 25px;
-}
-.yamaha-class h2{
-    text-align: center;
-    text-shadow: 2px 2px 5px rgb(39, 34, 34);
 
-}
-.honda-class {
-    padding: 25px ;
-    text-align: center;
-    background-color: #0b0fdd;
-    margin: 50px;
-    border-radius: 25px;
-}
-.honda-class h2{
-    text-align: center;
-    text-shadow: 2px 2px 5px rgb(39, 34, 34);
+.yamaha-class,
+.honda-class,
+.CFMOTO-class,
+.BMW-class {
+  padding: 25px;
+  text-align: center;
+  background: linear-gradient(to top left, #003366 0%, #669999 100%);
+  margin: 50px;
+  border-radius: 25px;
 }
 
+.yamaha-class h2,
+.honda-class h2,
+.CFMOTO-class h2,
+.BMW-class h2 {
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(39, 34, 34);
+}
 
-
-
-
+/* for modal */
 /* Styles for the image gallery */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .thumbnail {
-    width: 200px;
-    height: auto;
-    margin: 10px;
-    cursor: pointer;
-  }
-  
-  /* Styles for the modal */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 50px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.9);
-  }
-  
-  .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  .close {
-    color: #fff;
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.thumbnail {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Styles for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.close {
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.homeButton {
+  padding: 15px;
+  margin: 15px auto; 
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(to top, #663300 5%, #996633 54%);
+  border-radius: 25px;
+  max-width: 100%; 
+}
+
+.homeButton button:hover {
+  background-color: #04AA6D; /* Green */
+  color: white;
+}
+
+/* for smaller screens */
+@media only screen and (max-width: 600px) {
+  .Container {
+      padding: 10%;
+  }
+
+  .nav ul li {
+      margin-right: 10px;
+  }
+
+  .about {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .contact {
+      margin-left: 10px;
+      margin-right: 10px;
+      
+  }
+
+  .homeButton {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .yamaha-class,
+  .honda-class,
+  .CFMOTO-class,
+  .BMW-class,
+  .featured-models {
+      margin: 20px;
+  }
+
+  .row::after {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .column {
+      width: 100%;
+  }
+
+  .footer {
+      padding: 10px;
+  }
+
+  .nav-toggle {
+      display: block;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .nav-links.nav-links--visible {
+      display: flex;
+  }
+}
+
+/* for larger screens */
+@media only screen and (min-width: 601px) {
+  .nav ul li {
+      margin-right: 20px;
+  }
+
+  .about {
+      margin-left: 100px;
+      margin-right: 5%;
+  }
+
+  .contact {
+    margin: 20px auto;
+    max-width: 600px; 
+}
+
+
+.homeButton {
+  margin: 20px auto;
+  max-width: 600px; 
+}
+}
+/* Mobile navigation */
+@media only screen and (max-width: 600px) {
+  nav ul {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #663300; 
+    width: 100%;
+  }
+
+  nav ul.nav-links--visible {
+    display: flex; 
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0; 
+  }
+
+  .nav-toggle {
+    display: block; 
+    position: absolute;
+    top: 50%; 
+    right: 20px; 
+    transform: translateY(-50%); 
+  }
+}
