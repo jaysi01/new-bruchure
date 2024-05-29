@@ -121,6 +121,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   height: 100%;
+  width: 85%;
 }
 .about-content {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
